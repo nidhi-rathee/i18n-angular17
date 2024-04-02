@@ -1,5 +1,7 @@
+<input type="text" [value]="selectedLocale">
 <select (change)="onChangeLocale($event)" [value]="selectedLocale">
   @for(locale of locales; track locale) {
     <option [value]="locale.code">{{ locale.name }}</option>
   }
 </select>
+<h1>{{ "Hello" | translate }}</h1>
